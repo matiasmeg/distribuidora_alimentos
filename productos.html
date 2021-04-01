@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles/index.css" type="text/css" rel="stylesheet">
+    <link href="imagenes/truck.svg" rel="icon" type="img/svg">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    <link href="styles/iconos.css" type="text/css" rel="stylesheet">
+
+    
+    
+    <title>Emi-Distribuidora</title>
+</head>
+
+<body id="bodyColor">
+
+    <main>
+
+
+        <header>
+
+            <!-----------------------------------------------------ICONOS REDES-------------------------------------->
+
+            <div id="redes">
+
+                <div id="iconos_redes">
+
+                    <a href="tel:+1138831502"><img id="redes_navbar" src="imagenes/101wpW.svg"></a>
+                    <a href="https://www.instagram.com/matiasmeg172/?hl=es-la" target="new"><img id="redes_navbar"
+                            src="imagenes/102igW.svg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=1534893491" target="new"><img id="redes_navbar"
+                            src="imagenes/103fbW.svg"></a>
+
+                </div>
+
+
+
+                <div id="modo">
+
+                    <img id="modoColor" onclick="ajustarColorDia()" src="imagenes/cambiarColor.svg">
+                    <img id="modoDark" onclick="ajustarColor()" src="imagenes/cambiarNegro.svg">
+
+                </div>
+
+            </div>
+
+
+
+            <!------------------------------------------------------LOGO-MENU------------------------------------------>
+
+            <div class="logo_menu_contenedor">
+
+                <div class="logo_contenedor">
+                    <a href="index.html"> <img id="marca" src="imagenes/logo_violeta.png"></a> 
+                </div>
+
+                <nav id="botonera_principal">
+
+                    <ul class="navbar">
+
+                        <li class="items"><a href="index.html">Inicio</a></li>
+                        <li class="items"><a href="productos.html">Catálogo</a></li>
+                        <li class="items"><a href="contacto.html">Zonas</a></li>
+                        <li class="items"><a href="productos.html">Productos</a></li>
+                        <li class="items"><a href="contacto.html">Contacto</a></li>
+
+
+                    </ul>
+
+                </nav>
+
+
+
+
+
+            </div>
+
+            <!------------------------------------------------------menu-mobile..............................-->
+
+
+            <seccion class="menu_mobile_contenedor">
+
+                <nav class="menu_mobile">
+
+
+
+                    <label for="navbar">
+                        <input id="navbar" type="checkbox" class="navbar_input">
+
+                        <div class="navbar_open">
+                            <img class="img_menu" src="imagenes/list (1).svg">
+                        </div>
+
+                        <div class="navbar_content_mobile">
+
+                            <ul class="lista_mobile">
+
+                                <li class="items"><a href="index.html">Inicio</a></li>
+                                <li class="items"><a href="productos.html">Catálogo</a></li>
+                                <li class="items"><a href="contacto.html">Zonas</a></li>
+                                <li class="items"><a href="productos.html">Productos</a></li>
+                                <li class="items"><a href="contacto.html">Contacto</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                    </label>
+
+
+
+                </nav>
+
+
+            </seccion>
+
+
+        </header>
+
+
+
+
+
+        <!-------------------------------------------------------------------SECCION-UNO------------------------------------>
+
+        <section id="contenido_uno_productos" >
+
+            <h1 id='bienvenido' >Productos</h1>
+            <p class="cel"><a href="https://drive.google.com/file/d/1WCEegNrSB-UeY0ciUZu1M3ejyNaE8--_/view?usp=sharing"><img id="pdf_catalogo" src="imagenes/pdf-file.svg"></a></p>
+
+
+        </section>
+
+        <!----------------------------------------------------------Espaciador--------------------------------->
+        
+    
+
+        <div id="separador_contenedor_3">
+            <svg width="960" heigth="70">
+
+                <rect id="barra_izq" x="40"  y="10"  width="5" height="30"   fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+                </rect> 
+                <rect id="barra_izq" x="70"  y="10"  width="5" height="30"  fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+                </rect> 
+                <rect id="piso" x="41"  y="35"  width="33" height="5"   fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+
+                </rect> 
+                <rect id="manija" x="30"  y="10"  width="10" height="5"   fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+
+                </rect>
+                <rect id="paquete" x="48"  y="14"  width="19" height="20"   fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+                    <animate attributeType="CSS" attributeName="display" from="none" to="block" dur="5s" begin="0s" 
+                    fill="restore" repeatCount="indefinite"/>
+
+
+                </rect> 
+                <circle id="rueda_izq"  cx="45" cy="45" r="5"  fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+
+                </circle>
+                <circle id="rueda_der"  cx="70" cy="45" r="5"  fill="#fff">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="800" 
+                    dur="5s" begin="0s" fill="restore" repeatCount="indefinite"/>
+                </circle>
+
+                <rect id="caja_cargada" x="480"  y="28"  width="19" height="20"   fill="#fff">
+                     <animate attributeType="CSS" attributeName="display" from="block" to="none" dur="5s" begin="0s" 
+                    fill="restore" repeatCount="indefinite"/>
+
+                </rect> 
+
+
+
+
+
+
+            </svg>
+
+        </div> 
+        
+
+
+        
+
+        <!-----------------------------------------------------------SECCION-ALIMENTOS-BEBIDAS----------------------->
+
+        <section id="alimentos">
+
+            <div id="productos">
+                <a href="imagenes/AMANDA - Yerba Mate.jpg" data-lightbox="mate" title="Yerba mate Amanda."><img id="amanda"></a>
+                <h2 class="descripcion_productos">Yerba mate Amanda x 1 kg.<br><span class="precios"> $286</span> </h2>
+            </div>
+
+            <div id="productos">
+                <a href="imagenes/bud710.png" data-lightbox="mate" title="Cerveza Budweiser"><img id="bud"></a>
+                <h2 class="descripcion_productos">Cerveza Budweiser 350 cc. <br><span class="precios"> $155</span></h2>
+            </div>
+
+            <div id="productos">
+                <a href="imagenes/cerveza schneider 1 litro.png" data-lightbox="mate" title="Cerveza Schneider"><img id="schneider"></a>
+                <h2 class="descripcion_productos">Cerveza Schneider x 1 lt. <br><span class="precios"> $88</span></h2>
+            </div>
+
+            <div id="productos">
+                <a href="imagenes/Gatorade-Thirst-Quencher-Blue-Bolt-500ml.jpg" data-lightbox="mate" title="Gatorade."><img id="gatorade"></a>
+                <h2 class="descripcion_productos">Gatorade x 700 cc. <br><span class="precios"> $78</span></h2>
+            </div>
+
+            <div id="productos">
+                <a href="imagenes/vino fuego negro cabernet.png" data-lightbox="mate" title="Vino Fuego Negro."><img id="fuegoNegro"></a>
+                <h2 class="descripcion_productos">Vino Fuego Negro x 700 cc <br><span class="precios"> $144</span></h2>
+            </div>
+
+
+            <div id="productos">
+                <a href="imagenes/chocolatada_tregar.png" data-lightbox="mate" title="Leche chocolatada Tregar."><img id="chocolatada"></a>
+                <h2 class="descripcion_productos">Leche chocolatada Tregar x 1 lt. <br><span class="precios"> $92</span></h2>
+            </div>
+
+            <div id="productos">
+                <a href="imagenes/leche larga vida tregar.png" data-lightbox="mate" title="Leche larga vida Tregar."><img id="lecheTregar"></a>
+                <h2 class="descripcion_productos">Leche larga vida Tregar x 1 lt. <br><span class="precios"> $82</span></h2>
+            </div> 
+
+            <div id="productos">
+                <a href="imagenes/yerba-sinceridad.png" data-lightbox="mate" title="Yerba mate Sinceridad."><img id="yerbaSinceridad"></a>
+                <h2 class="descripcion_productos">Yerba mate Sinceridad x 1 kg. <br><span class="precios"> $172</span></h2>
+            </div>
+
+        </section>
+        
+        <!-----------------------------------------------------------FOOTER---------------------------------------->
+        <footer>
+
+            <div id="marca_redes">
+
+                <a href="index.html"><img id="marca_footer" src="imagenes/logo_violeta.png"></a>
+
+                <div class="redes_footer_contenedor">
+
+                    <a href="tel:+1138831502"><img id="redes_footer" src="imagenes/101wpW.svg"></a>
+                    <a href="https://www.instagram.com/matiasmeg172/?hl=es-la" target="new"><img id="redes_footer"
+                            src="imagenes/102igW.svg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=1534893491" target="new"><img id="redes_footer" src="imagenes/103fbW.svg"></a>
+
+                </div>
+            </div>
+
+            <div id="legal">
+                <p class="footer_legal">@2020 - Todos los derechos reservados</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    
+    
+    
+    <script type="text/javascript" src="js/modo.js"></script>
+    <script type="text/javascript" src="js/imagencambio.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script  type="text/javascript" src="js/lightbox.js"></script>
+
+
+
+
+</body>
+
+</html>

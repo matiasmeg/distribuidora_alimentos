@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles/index.css" type="text/css" rel="stylesheet">
+    <link href="imagenes/truck.svg" rel="icon" type="img/svg">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    <link href="styles/iconos.css" type="text/css" rel="stylesheet">
+
+    
+    
+    <title>Emi-Distribuidora</title>
+</head>
+
+<body id="bodyColor">
+
+    <main>
+
+
+        <header>
+
+            <!-----------------------------------------------------ICONOS REDES-------------------------------------->
+
+            <div id="redes">
+
+                <div id="iconos_redes">
+
+                    <a href="tel:+1138831502"><img id="redes_navbar" src="imagenes/101wpW.svg"></a>
+                    <a href="https://www.instagram.com/matiasmeg172/?hl=es-la" target="new"><img id="redes_navbar"
+                            src="imagenes/102igW.svg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=1534893491" target="new"><img id="redes_navbar"
+                            src="imagenes/103fbW.svg"></a>
+
+                </div>
+
+
+
+                <div id="modo">
+
+                    <img id="modoColor" onclick="ajustarColorDia()" src="imagenes/cambiarColor.svg">
+                    <img id="modoDark" onclick="ajustarColor()" src="imagenes/cambiarNegro.svg">
+
+                </div>
+
+            </div>
+
+
+
+            <!------------------------------------------------------LOGO-MENU------------------------------------------>
+
+            <div class="logo_menu_contenedor">
+
+                <div class="logo_contenedor">
+                    <a href="index.html"> <img id="marca" src="imagenes/logo_violeta.png"></a> 
+                </div>
+
+                <nav id="botonera_principal">
+
+                    <ul class="navbar">
+
+                        <li class="items"><a href="index.html">Inicio</a></li>
+                        <li class="items"><a href="productos.html">Catálogo</a></li>
+                        <li class="items"><a href="contacto.html">Zonas</a></li>
+                        <li class="items"><a href="productos.html">Productos</a></li>
+                        <li class="items"><a href="contacto.html">Contacto</a></li>
+
+
+                    </ul>
+
+                </nav>
+
+
+
+
+
+            </div>
+
+            <!------------------------------------------------------menu-mobile..............................-->
+
+
+            <seccion class="menu_mobile_contenedor">
+
+                <nav class="menu_mobile">
+
+
+
+                    <label for="navbar">
+                        <input id="navbar" type="checkbox" class="navbar_input">
+
+                        <div class="navbar_open">
+                            <img class="img_menu" src="imagenes/list (1).svg">
+                        </div>
+
+                        <div class="navbar_content_mobile">
+
+                            <ul class="lista_mobile">
+
+                                <li class="items"><a href="index.html">Inicio</a></li>
+                                <li class="items"><a href="productos.html">Catálogo</a></li>
+                                <li class="items"><a href="contacto.html">Zonas</a></li>
+                                <li class="items"><a href="productos.html">Productos</a></li>
+                                <li class="items"><a href="contacto.html">Contacto</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                    </label>
+
+
+
+                </nav>
+
+
+            </seccion>
+
+
+        </header>
+
+
+
+
+
+        <!-------------------------------------------------------------------SECCION-UNO------------------------------------>
+
+        <section id="contenido_uno" >
+
+            <h1 id='bienvenido'> ¡Bienvenid@!</h1>
+            <p class="cel"><a href="tel:+1138831502"><img class="whatsapp" src="imagenes/101wpW.svg"></a></p>
+
+
+        </section>
+
+<!----------------------------------------------------------Espaciador--------------------------------------------->
+
+        <div id="separador_contenedor">
+            <svg width="960" heigth="30">
+
+                <circle id="izq"    cx="430" cy="18" r="13" stroke="#fff"  stroke-width="3" fill="#bc6fe8">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                    from="0" to="-150" dur="3s" begin="0s"fill="restore" repeatCount="indefinite"/>
+
+                    <!--<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s" dur="5s"
+                    fill="restore" repeatCount="indefinite"/>-etiqueta para cambiar opacidad------->
+                </circle>
+                
+                <circle id="centro" cx="480" cy="18" r="13" stroke="#fff"  stroke-width="3" fill= "#bc6fe8"/>
+                
+                <circle id="der"    cx="530" cy="18" r="13" stroke="#fff"  stroke-width="3" fill="#bc6fe8">
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="150" 
+                    dur="3s" begin="0s" fill="restore" repeatCount="indefinite"/>
+
+                    <!---<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s" dur="5s"
+                    fill="restore" repeatCount="indefinite"/>---etiqueta para cambiar opacidad---->
+
+                </circle>
+
+
+            </svg>
+
+        </div>
+
+<!-----------------------------------------------------------SECCION-ALIMENTOS-BEBIDAS----------------------->
+
+        <section id="alimentos">
+
+            <div id="bebida">
+
+                <img id="botella" style="display:block" onclick="cambioImagen()">
+                <h2 class="descripcion_bebidas1" ><a href="productos.html" target="new" class="enlace_productos">Bebidas <br><span class="click_ofertas">(click sobre imagen para ver ofertas)</span></a></h2>
+            
+            </div>
+
+            <div id="bebida2" style="display:none" onclick="cambioImagen2()">
+
+                <img id="botella2" src="imagenes/vinosUva.jpeg">
+
+                <ul id="ofertas_parrafo">
+
+                    <li class="ofertas_parrafo-detalle">Vinos Dilema Day (caja 6 x 700cc): $710 </li>
+                    <li class="ofertas_parrafo-detalle">Vinos Estancia Mendoza (caja 6 x 700cc): $ 530 </li>
+
+
+                </ul>
+
+
+                <h2 class="descripcion_bebidas2"><a href="productos.html" target="new" class="enlace_productos">Ofertas en vinos!!</a></h2>
+
+            </div>
+
+            <div id="conserva">
+                <a href="imagenes/mate.jpg" data-lightbox="mate"><img id="lata"></a>
+                <h2 class="descripcion_alimentos"><a href="productos.html" target="new" class="enlace_productos">Alimentos no perecederos</a></h2>
+            </div>
+
+        </section>
+
+<!-------------------------------------------------------------Canvas-Section------------------------------------>
+        <section id="caja_lienzos">
+
+            <canvas id="lienzo_1">
+
+
+            </canvas>
+            <aside id="lienzo_2">
+                <h3 id="aside_vinos">
+                    ¡Aprovechá las ofertas <br>de tiempo limitado en vinos!
+                </h3>
+
+            </aside>
+
+        </section>
+
+<!----------------------------------------------------titulo drag-------------------------------------------------->
+<section id="contenedor_titulo_drag">
+    <h2 id="titulo_drag">Duplicá tus ganancias de manera tan sencilla como arrastar una imagen en esta pantalla!</h2>
+
+
+</section>
+
+<!--------------------------------------------------Section Drag & Drop-------------------------------------------->
+
+<section id="contenedor_drag">
+
+        
+    <aside id="cajasoltar">
+        Arrastre y suelte la imagen aquí
+
+    </aside>
+
+    <aside id="cajaimagenes">
+
+        <img id="imagen" src="imagenes/yerba-mate_opt.jpg">
+
+    </aside>
+
+</section>
+
+<!--------------------------------------------------SECCION-DESCARGABLE--------------------------------------->
+        
+        <section id="descargable">
+
+            <div id="pdf">
+
+                    <a href="https://drive.google.com/file/d/1WCEegNrSB-UeY0ciUZu1M3ejyNaE8--_/view?usp=sharing"
+                    target="new"><img id=lista src="imagenes/pdf-file.svg"></a>
+
+                    <a href="https://drive.google.com/file/d/1WCEegNrSB-UeY0ciUZu1M3ejyNaE8--_/view?usp=sharing"
+                    target="new" class="enlace_descripcion_alimentos"><h2 class="descripcion_alimentos">
+                        ¡Descargue su catálogo!</h2></a>
+            </div>
+
+            <article id="pdf_descripcion">
+
+                <nav class="botones_tamanios">
+
+                    <ul class="botones_contenedor">
+                        <li class="botones_contenedor_li"><a href="#texto_catalogo" onclick="agrandarTexto()">+</a></li>
+                        <li class="botones_contenedor_li"><a href="#texto_catalogo" onclick="disminuirTexto()">-</a></li>
+
+                    </ul>
+
+
+
+                </nav>
+
+
+
+
+                <h2 id="catalogo" class="descripcion">Catálogo</h2>
+
+
+
+                <p id="texto_catalogo" class="sobre_catalogo">&nbsp Descarguá nuestro <strong>catálogo de productos</strong>
+                    para planificar con tiempo tus pedidos.<br />
+                    &nbsp En el listado encontrará gran variedad de articulos como vinos, cervezas, lácteos, puré de tomate,
+                    yerba, artículos de limpieza y mucho más.<br />
+                    &nbsp Consultá este catálogo todas las semana para estar actualizado y enterarte de nuestras promociones.
+                </p>
+
+
+
+            </article>
+        
+        </section>
+<!----------------------------------------------SECCION-DISTRIBUCION--------------------------------->
+        
+       
+
+        <section id="zonas_mapas">
+
+            <article id="zonas">
+
+                <h2 class="descripcion">Zonas de distribución</h2>
+                <p class="sobre_catalogo">Nuestra zona de reparto alcanza a las localidades de Santa Fe, Santo Tomé y
+                    Sauce Viejo.</p>
+                <p class="sobre_catalogo">Ante cualquier consulta, escribinos y te responderemos a la brevedad.</p>
+                <p class="sobre_catalogo"><strong>Dirección: Santiago del Estero N° 2750, Santo Tomé, Santa Fe.</strong></p>
+
+            </article>
+
+            <div id="gps">
+            
+                <iframe class="google_maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.5093523207356!2d-60.77381968529751!3d-31.6746407159595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a62b065e1f87%3A0xb218e2d2689ebea4!2sSantiago%20del%20Estero%202750%2C%20S3016BUB%20Santo%20Tom%C3%A9%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1606603376083!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+            </div>
+
+        </section>
+
+<!--------------------------------------------------------------Seccion-Agenda------------------------------------->
+
+        <form class="formulario">
+
+            <h2 id="titulo_contacto">Mi agenda (próximos pedidos)</h2>
+
+            <input class="campos" type="number" id="clave" min="1" placeholder="N° de producto">
+
+            <select class="region_select" id="categoria">
+                <option value="bebidas">Bebidas</option>
+                <option value="alimentos">Alimentos no perecederos</option>
+                <option value="otros productos">Otros productos</option>
+            </select>
+
+            <textarea class="campos" rows="3" id="referencia" placeholder="Descripcion del producto"></textarea>
+
+            <input class="campos" type="date" id="fecha">
+
+            <input class="boton" type="button" id="grabar" value="Guardar producto">
+
+        </form>
+            
+
+
+
+        <div class="formulario" id="mostrarDatos">
+            
+
+        </div>
+
+    
+
+
+<!---------------------------------------------------------------SECCION-FORMULARIO----------------------------------->
+        
+    
+
+        <form class="formulario">
+
+            <h2 id="titulo_contacto">¡Escribinos!</h2>
+
+            <input class="campos" type="text" id="nombre"  placeholder="Nombre">
+
+            <input class="campos" type="email" id="email" placeholder="Email">
+
+            <textarea class="campos" id="mensaje"  rows="3" placeholder="Mensaje"></textarea>
+
+            <h4 class="region_reparto">¿Dónde queda tu negocio?</h4>
+
+            <select class="region_select" id="region" name="region">
+                <option value="santo_tome">Santo Tomé</option>
+                <option value="sauce_viejo">Sauce Viejo</option>
+                <option value="santa_fe">Santa Fe</option>
+            </select>
+
+            <button class="boton" type="submit" >Enviar</button>
+
+        </form>
+
+<!-------------------------------------------------------Espaciador 2---------------------------------------------------->
+
+
+        <div id="separador_contenedor_2">
+
+            <svg width="960" height="140">                
+
+
+                <ellipse id="cara"  cx="480" cy="70" rx="50" ry="35" stroke="#fff" fill="#bc6fe8">
+                    <!---<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s" 
+                    fill="restore" repeatCount="indefinite"/>-->
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                    from="0  40" to="0 -2" dur="4s" begin="0s"fill="restore" repeatCount="indefinite"/>
+
+                </ellipse>
+                
+                <circle id="ojo_izq"  cx="470" cy="55" r="10"  fill="#fff">
+                    <!--<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s"
+                    fill="restore" repeatCount="indefinite"/>-->
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                    from="0  60" to="0 0" dur="4s" begin="0s"fill="restore" repeatCount="indefinite"/>
+                </circle>
+                
+
+                <circle id="ojo_der"  cx="490" cy="55" r="10"  fill="#fff">
+                  <!-- <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s"
+                    fill="restore" repeatCount="indefinite"/>-->
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                    from="0  60" to="0 0" dur="4s" begin="0s"fill="restore" repeatCount="indefinite"/>
+
+                </circle>
+
+                
+                <circle id="pup_izq"  cx="470" cy="55" r="4"  fill="#000">
+                   <!-- <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s"
+                    fill="restore" repeatCount="indefinite"/>--->
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                    from="0  70" to="0 1" dur="4s" begin="0s"fill="restore" repeatCount="indefinite"/>
+
+
+                </circle>
+                
+
+                <circle id="pup_der"  cx="490" cy="55" r="4"  fill="#000">
+                    <!--<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s"
+                    fill="restore" repeatCount="indefinite"/>-->
+                    <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                    from="0  70" to="0 1" dur="4s" begin="0s"fill="restore" repeatCount="indefinite"/>
+
+
+
+                </circle>
+                
+
+                <rect id="muro" x="405"  y="70"  width="150" height="70"  stroke="#fff" fill="#9076ab"/>               
+
+
+            </svg>
+
+            <img width="50" height="50" id="arrow" src="imagenes/arrow-down-sign-to-navigate.svg"/>
+
+            
+
+        </div>
+
+
+<!-----------------------------------------------------------SECCION-CIUDAD--------------------------------------->
+        <section class="ciudad">
+
+            <h2 id="title_multimedia">Asomate para ver a nuestra hermosa ciudad!!</h2>
+
+
+            <nav id="menu2">
+
+                <ul id="sub_menu">
+
+                    <li id="sub_items"><a href="#titulo_galeria">
+
+                            <button class="btn_multimedia"
+                                onclick="mostrar_menu('carrusel_contenedor')">Galeria</button></a>
+
+
+                    </li>
+
+                    <li id="sub_items"><a href="#video">
+
+                        <button class="btn_multimedia"
+                            onclick="mostrar_menu('video')">Video</button></a>
+
+
+                </li>
+
+                    
+                    <li id="sub_items"><a href="#audio">
+
+                            <button class="btn_multimedia" onclick="mostrar_menu('audio')">Música</button></a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+
+
+        </section>
+
+        <!---------------------------------------------------------------Galeria------------------------------------>
+
+        <figure id=carrusel_contenedor style="display: none;">
+
+            <h2 id="titulo_galeria">Galeria de fotos</h2>
+
+            <img src="" id="imagenCarrusel">
+
+        </figure>
+
+        <!----------------------------------------------------------------VIDEO------------------------------------------------->
+
+        <div id="video" style="display: none;">
+
+            <h2 class="titulo_video" id="#title_mp4">Santo Tomé - Santa Fe</h2>
+
+            <video id="ciudad_video" src="videos/ciudad.mp4" poster="imagenes/img3.jpg"></video>
+
+            <nav id="controles_video_navegador">
+
+                <ul id="controles_videos">
+
+                    <li><a href="#title_mp4" onclick="reproducir()" onclick="barraProgreso()" id="ver"><span class="icon-play3"></span></a></li>
+                    <li><a href="#title_mp4" onclick="saltar(-5)" id="atras"><span class="icon-backward2"></span></a></li>
+                    <li><a href="#title_mp4" onclick="saltar(5)" id="avanzar"><span class="icon-forward3"></span></a></li>
+                    <li><a href="#title_mp4" onclick="detener()" id="stop"><span class="icon-stop2"></span></a></li>
+                
+
+                </ul>
+
+            
+            </nav> 
+
+            
+        </div>
+        <!-------------------------------------------------------------AUDIO------------------------------------------->
+
+        <div id="audio" style="display: none;">
+
+            <h2 class="titulo_video">Los Palmeras ft. Coti - El embrujo</h2>
+
+            <audio class="mp3" src="audios/Los Palmeras ft. Coti - El Embrujo Video Oficial Cumbia Tube.mp3"
+                controls></audio>
+
+            
+
+        </div>
+
+        <!-----------------------------------------------------------BANNER ------------------------------------------->
+        <section class="banner_footer">
+
+            <div class="titulo_covid_caja">
+
+                <h2 class="title_banner">¡Cuidémonos entre todos!</h2>
+                <p class="banner_descripcion">Llamanos para tener tus productos sin circular por la ciudad.</p>
+                <a href="imagenes/covid-19-en-argentina-1-715-infectados-y-60-fallecidos-696x392.jpg" data-lightbox="covid">
+                <img class="imagen_covid"  src="imagenes/covid-19-en-argentina-1-715-infectados-y-60-fallecidos-696x392.jpg"></a>
+
+            </div>
+
+            <div class="camion_banner_caja">
+                <img class="camion_banner" src="imagenes/006.truck_white.svg">
+            </div>
+
+        </section>
+        <!---------------------------------------------------------------FOOTER---------------------------------------->
+        <footer>
+
+            <div id="marca_redes">
+
+                <a href="index.html"><img id="marca_footer" src="imagenes/logo_violeta.png"></a>
+
+                <div class="redes_footer_contenedor">
+
+                    <a href="tel:+1138831502"><img id="redes_footer" src="imagenes/101wpW.svg"></a>
+                    <a href="https://www.instagram.com/matiasmeg172/?hl=es-la" target="new"><img id="redes_footer"
+                            src="imagenes/102igW.svg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=1534893491" target="new"><img id="redes_footer" src="imagenes/103fbW.svg"></a>
+
+                </div>
+            </div>
+
+            <div id="legal">
+                <p class="footer_legal">@2020 - Todos los derechos reservados</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+    
+    <script type="text/javascript" src="js/redimensionar.js"></script>
+    <script type="text/javascript" src="js/multimedia.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+    <script type="text/javascript" src="js/modo.js"></script>
+    <script type="text/javascript" src="js/imagencambio.js"></script>
+    <script type="text/javascript" src="js/validacion.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script  type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/controlVideo.js"></script>
+    <script type="text/javascript" src="js/funcionesCanvas.js"></script>
+    <script type="text/javascript" src="js/drag_drop.js"></script>
+    <script type="text/javascript" src="js/agenda.js"></script>
+    
+
+
+
+</body>
+
+</html>

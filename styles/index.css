@@ -1,0 +1,1793 @@
+:root{
+    --color-primary: #bc6fe8;
+    --color-secundary:  #b9aeee;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+
+}
+body{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bodyColor{
+    background-color:#dea9e8 ;
+}
+
+header, section, footer{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    height: 100px;
+    background-color: var(--color-primary);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    
+}
+/*---------------------------------------------------------------------iconos-redes------------------------------------*/
+
+#redes{
+    height: 30px;
+    background-color: #706897;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+#iconos_redes{
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    
+    
+    
+}
+
+
+
+#modo{
+
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+#redes_navbar {
+    width: 20px;
+    height: 20px;
+    margin-top:5px;
+    margin-right: 30px;
+    
+}
+
+#modoColor , #modoDark{
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    margin-right: 50px;
+    cursor: pointer;
+
+}
+
+/*---------------------------------------------------------------logo_menu---------------------------------------------*/
+
+#marca{
+    width: 100%;
+    height: 70px;
+    background-size: cover;
+    box-sizing: border-box;    
+    
+
+}
+
+#redes{
+    width: 100%;
+}
+.logo_menu_contenedor{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 70px;
+    
+    
+}
+
+.logo_contenedor{
+    width: 20%;
+    height: 70px;
+
+}
+
+#botonera_principal{
+    width: 80%;
+    height: 70px;
+    background-color: var(--color-primary);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    margin-top:0px;   
+    
+
+    
+}
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    
+    
+
+}
+.items{
+    margin:3%;    
+    
+}
+
+.items a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color:#fff;
+    padding: 10px;
+    
+    
+}
+.items a:hover{
+    color: var(--color-secundary);
+    background-color: #fff;
+    border-radius: 20px;
+
+
+
+}
+
+.botones_contenedor{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 270px;
+    
+
+
+}
+
+.botones_contenedor_li{
+    font-size: 20px;  
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+
+.botones_contenedor_li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 4px;
+    border: 2px solid var(--color-primary);
+    background-color: #fff;
+    
+
+}
+
+
+
+
+
+/*------------------------------------------------------------------MENU_MOBILE---------------------------------------*/
+
+.img_menu{
+    width: 30px;
+    height: auto;
+    color: var(--color-primary);
+
+
+}
+
+.navbar_input, .navbar_open{
+    display: none;
+}
+
+.navbar_content_mobile{
+    display: none;
+    
+}
+
+/*-----------------------------------------------------Espaciador----------------------------------------*/
+
+#separador_contenedor, #separador_contenedor_2, #separador_contenedor_3{
+    width: 100%;
+    height: 40px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c)) ;
+    margin-bottom: 10px;
+}
+
+#separador_contenedor_2{
+    height: 180px;
+}
+
+#separador_contenedor_3{
+    height: 70px;
+}
+/*--------#izq{
+    animation: circ_izq ease-in-out 5s infinite;
+
+}----Animacion circulo izquierdo--*/
+
+/*-------#der{
+    animation: circ_der ease-in-out 5s infinite;
+
+}----Animacion circulo derecho--*/
+
+/*---@keyframes circ_izq {
+
+    0%{ 
+        transform: translate(-150px,0);
+        opacity: 0;
+        
+    }
+    10%{
+        transform: translate(0,0);
+        opacity: 1;
+        
+        
+
+    }
+    99%{
+        opacity: 1;
+        
+
+    }
+    100%{
+        transform: translate(-150px,0);
+        opacity: 0;
+        
+    }
+
+}
+
+@keyframes circ_der {
+
+    0%{ 
+        transform: translate(150px,0);
+        opacity: 0;
+    }
+    10%{
+        transform: translate(0,0);
+        opacity: 1;
+
+    }
+    99%{
+        opacity: 1;
+
+    }
+    100%{
+        transform: translate(150px,0);
+        opacity: 0;
+    }
+
+} ---------Fotogramas clave de circulo izquierdo y circulo derecho----*/
+
+/*-------#cara, #ojo_izq, #ojo_der, #pup_izq, #pup_der{
+    animation: cara_asoma ease-in-out 5s infinite;
+}-------Ejecuta la aparicion de la cara--------*/
+
+
+/*--------@keyframes cara_asoma {
+
+    0%{ 
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+
+    }
+    40%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+
+}-----Fotogramas claves de aparicion de cara-*/
+
+
+
+#arrow{
+    width: 30px;
+    margin-top:-15px;
+    margin-left: 465px;
+}
+
+
+
+/*------------------------------------------------------------Seccion-uno--------------------------------------------*/
+
+
+
+#contenido_uno, #contenido_uno_contacto, #contenido_uno_productos{
+    width: 100%;
+    height: 400px;
+    background-image: url("../imagenes/fondo_puente.jpg");
+    padding-top: 100px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+    
+}
+
+#contenido_uno_contacto{
+    background-image: url("../imagenes/img6.png");
+    
+}
+
+#contenido_uno_productos{
+    background-image: url("../imagenes/vinos-estrategia-2020.jpg");
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-family: 'Lobster', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.whatsapp{
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+
+
+}
+
+.whatsapp:hover, #pdf_catalogo:hover{
+    transform: translate(0, -10px);
+    transition: all ease .3s;
+    
+}
+
+#pdf_catalogo{
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+
+    
+}
+
+
+
+h1 {
+    animation-name: color_titulo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;/*para que vuelva a su posicion inicial */
+    animation-timing-function: ease-in;
+    width: 250px;
+    position: relative;
+    padding: 2px;   
+
+    
+}
+
+@keyframes color_titulo {
+    from {
+        color: rgb(82, 41, 92);
+        font-size: 40px;
+    }
+
+    50%{
+        text-decoration-line:underline;
+    }
+    
+    to {
+        color:#fff;
+        font-size: 45px;
+    }
+} 
+
+
+/*--------------------------------------------------------------------alimentos----------------------------------------------------*/
+
+#bebida, #bebida2{
+    width: 470px;
+    height: 320px;
+    background-color: var(--color-primary);
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    padding-left: 10px;
+    
+}
+
+#botella, #botella2{
+    width: 450px;
+    height: 230px;
+    background-image: url("../imagenes/espumante.jpg") ;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    
+    
+}
+
+.click_ofertas{
+    font-size: 12px;
+}
+
+#ofertas_parrafo{
+    font-size: 20px;
+    color: #fff;
+    margin-top: -150px;
+    list-style: none;
+}
+
+.ofertas_parrafo-detalle{
+    margin-bottom: 20px;
+}
+
+.descripcion{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-style: italic;
+    color: #fff;
+    margin-top:5px;
+    text-align: center;
+    border-radius: 40x;
+    
+}
+.descripcion_alimentos, .descripcion_bebidas1, .descripcion_productos{
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 25px;
+    font-style: italic;
+    margin-top:5px;
+    text-align: center;
+
+}
+
+.descripcion_productos{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.enlace_descripcion_alimentos{
+    text-decoration: none;
+}
+
+.descripcion_bebidas2{
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 25px;
+    font-style: italic;
+    margin-top:90px;
+    text-align: center;
+
+}
+
+#alimentos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#conserva, #productos{
+    width: 490px;
+    height: 320px;
+    padding-top:10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    
+    
+    }
+
+
+#productos{
+    padding-top: 20px;
+    width: 480px;
+    
+    
+}
+    
+#lata , #amanda, #bud, #schneider , #gatorade , #fuegoNegro, #chocolatada, #lecheTregar, #yerbaSinceridad{
+    width: 300px;
+    height: 230px;
+    background-image: url("../imagenes/mate.jpg") ;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+#lata{
+    background-size: cover;
+    width: 450px;
+    height: 230px;
+}
+
+a.enlace_productos{
+    text-decoration: none;
+    color:#fff;
+    transform: scale(1.1);
+    transition: all ease .3s;
+    
+}
+
+a.enlace_productos:hover{
+    transform: scale(1.1);
+    transition: all ease .3s;
+    color:pink
+    
+
+}
+
+#amanda{
+    background-image: url("../imagenes/AMANDA - Yerba Mate.jpg");
+
+}
+
+#bud{
+    background-image: url("../imagenes/bud710.png");
+    
+}
+
+#schneider{
+    background-image: url("../imagenes/cerveza schneider 1 litro.png");
+}
+
+#gatorade{
+    background-image: url("../imagenes/Gatorade-Thirst-Quencher-Blue-Bolt-500ml.jpg");
+}
+
+#fuegoNegro{
+    background-image: url("../imagenes/vino fuego negro cabernet.png");
+}
+
+#chocolatada{
+    background-image: url("../imagenes/chocolatada_tregar.png");
+}
+
+#lecheTregar{
+    background-image: url("../imagenes/leche larga vida tregar.png");
+}
+
+#yerbaSinceridad{
+    background-image: url("../imagenes/yerba-sinceridad.png");
+}
+
+#amanda:hover, #bud:hover, #schneider:hover, #gatorade:hover, #fuegoNegro:hover, #chocolatada:hover, 
+#lecheTregar:hover, #yerbaSinceridad:hover {
+    box-shadow: 0px 0px 20px hsla(0, 0%, 100%, 0.507);
+    
+}
+
+
+span.precios{
+    color:rgb(236, 122, 122);
+    font-weight:normal;
+}
+
+/*-------------------------------------------------Canvas-Section--------------------------------------------------*/
+
+
+
+#caja_lienzos{
+    width: 100%;
+    height: 200px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c)) ;
+    margin-bottom: 10px;
+}
+
+#lienzo_1, #lienzo_2{
+    width: 45%;
+    height: 100%;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    float:left;
+}
+
+#aside_vinos{
+    font-size: 25px;
+    color:#fff;
+    text-align: center;
+    margin-top:50px;
+
+}
+
+/*-------------------------------------------------drag and drop-----------------------------------------------*/
+
+#contenedor_titulo_drag{
+    width: 960px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c)) ;
+   
+}
+#titulo_drag{
+    color:#fff;
+    font-size: 23px;
+    text-align: center;
+}
+#contenedor_drag{
+    display:flex;
+    justify-content: space-between;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c)) ;
+    margin-bottom: 20px;
+    margin-top:20px;
+
+}
+
+
+#cajasoltar {
+    width: 420px;
+    height: 320px;
+    margin: 10px;
+    border: 1px solid #999999;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    padding: 10px;
+    } 
+    
+    #cajaimagenes {
+    width: 420px;
+    height: 320px;
+    margin: 10px;
+    border: 1px solid #999999;
+    padding: 10px;
+    margin-left: 30px;
+    } 
+    
+    #cajaimagenes img {
+    width: 400px;
+    }
+    
+
+
+
+/*---------------------------------------------------------------------PdF-------------------------------------------*/
+
+#pdf{
+    width: 470px;
+    height: 290px;
+    background-color: var(--color-primary);
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+
+}
+#lista{
+    height: 200px; 
+    padding-top: 5px;
+    width: 300px;
+
+    
+}
+
+
+#pdf_descripcion{
+    width: 480px;
+    height: 290px;
+    background-color: var(--color-primary);
+    float: right;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    overflow: scroll;
+    
+}
+.sobre_catalogo{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+h2.descripcion_alimentos:hover{
+    color:pink;
+}
+
+/*------------------------------------------------------------------ZONAS-----------------------------------------*/
+
+#zonas{
+    width: 470px;
+    height: 305px;
+    background-color:#fff ;
+    padding-top: 50px;
+    box-sizing: border-box;
+    float: left;  
+    margin-bottom: 10px;
+    padding: 35px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+}
+
+#gps{
+    width: 480px;
+    height: 305px;
+    float: right;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-position: center;
+    border-radius: 20px;
+    
+    
+
+}
+
+.google_maps{
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+/*---------------------------------------------------------------------FORMULARIO-----------------------------------*/
+
+.formulario{
+    width: 960px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    clear: both;
+    background-color: var(--color-secundary);
+    border-radius: 4px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    
+}
+#titulo_contacto {
+    color:#fff;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.campos{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid var(--color-primary);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.region_select{
+    width: 100%;
+    padding:10px;
+    margin-top:15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--color-primary);
+}
+.region_reparto{
+    color:#fff;
+    font-size: 18px;
+    margin-top:10px;
+}
+.boton{
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: var(--color-primary);
+    color:white;    
+    
+}
+
+.boton:hover{
+    transform: scale(1.01);
+    transition: all ease .3s;
+    background-color: #5c5c5c;
+}
+
+#mostrarDatos{
+    color:#fff;
+}
+
+#boton_borrar{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--color-primary);
+    margin-bottom: 15px;
+}
+
+#boton_borrar:hover{
+    transform:scale(1.1);
+    transition: all ease .3s;
+
+}
+
+#borrar{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    
+}
+
+/*------------------------------------------------------CIUDAD----------------------------------------------------*/
+
+.ciudad{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    clear: both;
+    margin-bottom: 10px;
+    box-shadow: 10px 0 20px #2c2c2c;
+    border-radius: 20px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+
+
+}
+
+#title_multimedia{
+
+color:#fff;
+text-align: center;
+margin:auto;
+margin-bottom: 20px;
+font-size: 25px;
+margin-top: 20px;
+padding-top: 20px;
+
+}
+
+button.btn_multimedia{
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 10px;
+    color: var(--color-primary);
+    border: 4px solid var(--color-primary);
+    font-weight: bold;
+    background-color: #fff;
+}
+
+button.btn_multimedia:hover{
+    transform: scale(1.2);
+    transition: all ease .3s;
+    box-shadow: 10px 10px 20px #2c2c2c;
+}
+
+
+.descripcion_ofertas{
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-primary);
+    margin-top: 20px;
+    font-weight: bold;
+    
+}
+
+
+#sub_menu{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#sub_items{
+    display: block;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 17px;
+
+}
+
+#sub_items a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+
+
+/*----------------------------------------------------------Carrusel--VIDEO------------------------------------------------*/
+
+#video, #carrusel_contenedor{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 960px;
+    height: 450px;
+    padding-top: 10px;
+    background-color: var(--color-primary);
+    margin-bottom: 10px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    border-radius: 4px;
+}
+
+#imagenCarrusel{
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+.titulo_video, #titulo_galeria{
+    color:#fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#video{
+    height: 500px;
+}
+
+#ciudad_video{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+        
+}
+
+#controles_videos{
+    display: flex;
+    justify-content: row;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+#controles_videos li {
+    text-decoration: none;
+    color:#fff;
+    padding: 0px 20px 0px 20px;
+    list-style: none;
+    
+}
+
+#controles_videos li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+}
+
+
+#controles_videos li:hover{
+    
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+
+
+#controles_videos li a {
+    animation-name: movimiento-diagonal;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;/*para que vuelva a su posicion inicial */
+    width: 100px;
+    position: relative; 
+    
+}
+
+@keyframes movimiento-diagonal {
+    from {
+       color: rgb(82, 41, 92);
+       
+    }
+    
+    to {
+       color:#fff;
+    
+    }
+} 
+
+
+/*------------------------------------------------------AUDIO--------------------------------------*/
+
+#audio{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 960px;
+    height: 200px;
+    padding-top: 10px;
+    background-color: var(--color-secundary);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    margin-bottom: 10px;
+    clear: both;
+}
+.mp3{
+    margin-top: 20px;
+}
+
+/*------------------------------------------------------BANNER-FOOTER---------------------------------*/
+
+.banner_footer{
+    width: 960px;
+    height: 350px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 10px 0 20px #2c2c2c;
+}
+.title_banner{
+    font-size: 28px;
+    text-align: center;
+    color: rgba(255,255,255,.5);
+
+}
+.imagen_covid{
+    width: 350px;
+    margin-left: 20%;
+    margin-top:20px;
+    border-radius: 20px;
+    background-origin: padding-box;
+    padding: 5px;
+
+}
+.camion_banner{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+}
+.banner_descripcion{
+    font-size: 18px;
+    color:rgba(255,255,255,.5);
+    margin-top:10px;
+}
+
+/*-------------------------------------------------------FOOTER-------------------------------------------*/
+
+footer{
+    height: 100px;
+    background-color: var(--color-primary);
+    box-sizing: border-box;
+    clear: both;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+}
+#marca_redes{
+    clear: both;
+}
+#marca_footer{
+    width: 200px;
+    height: 70px;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+#redes_footer{
+    width: 50px;
+    height: 30px;
+    float:right;
+    margin-top:35px;
+    margin-right: 10px;
+}
+
+#redes_footer:hover{
+    transform: scale(1.1);
+    transition: all ease .3;
+}
+#legal{
+    width: 960px;
+    height: 30px;
+    background-color: var(--color-secundary);
+    clear: both;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+}
+.footer_legal{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    line-height: 30px;
+}
+
+#amanda:hover, #bud:hover, #schneider:hover, #chocolatada:hover, #gatorade:hover,
+#fuegoNegro:hover, #lecheTregar:hover, #yerbaSinceridad:hover{
+    transform: scale(1.02);
+    transition: all 500ms ease;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------RESPONSIVE-TABLET--------------------------------------*/
+
+@media (min-width: 600px) and (max-width:1023px){
+
+    body{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    #redes{
+    
+        width: 95%;
+        
+    
+
+    }
+
+    #iconos_redes{
+        float: left;
+    }
+
+
+    .logo_menu_contenedor{
+        display: none;
+    }
+
+    #modo{
+
+        width: 200px;
+        float: right;
+    
+    
+
+    } 
+
+
+
+/*---------------------------------------------------------------------------Menu_TABLET--------------------------------------*/
+
+    .navbar_input{
+        display: none;
+    }
+
+    .navbar_content_mobile{
+        display: none;
+        
+    }
+
+    .navbar_open{
+        display: flex;
+    }
+
+    .img_menu{
+        margin-top: 30px;
+        margin-left:30px;
+    }
+
+    .lista_mobile{
+        list-style: none;
+    }
+
+    .navbar_input:checked ~ .navbar_content_mobile{
+        display: block;
+        z-index: 100;
+    }
+    
+    #redes{
+        width: 100%;
+
+    }
+
+    #menu_mobile_responsive{
+        width: 100vw;
+    }
+
+/*----------------------------------------------Espaciador-Tablet-------------------------------------------*/
+
+    #separador_contenedor, #separador_contenedor_2{
+        display: none;
+    
+        
+    }
+        
+/*--------------------------------------------------------seccion-alimentos-TABLET----------------------------------*/
+    #alimentos{
+        width: 99%;
+    }
+
+    #botonera_principal{
+        width: 100%;
+        height: 70px;
+        
+
+    }
+
+
+    #bebida, #conserva, #botella, #lata, #bebida2, #botella2, #productos{
+        width: 100%;
+        
+    }
+
+    #botella, #lata, #botella2{
+        width: 95%;
+        margin-left: 1;
+        margin-right: 1%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+
+    #productos{
+        width: 50%;
+    }
+
+    #caja_lienzos{
+        display:none;
+    }
+
+    #contenedor_titulo_drag{
+        display: none;
+    }
+    #contenedor_drag{
+        display:none;
+    }
+
+
+    /*---------------------------------------------------------PDF-TABLET-----------------------------------------*/
+
+
+    .botones_contenedor{
+        margin-left: 600px;  
+    
+    
+    }
+    
+    
+
+    #descargable{
+        width: 98%;
+    
+    }
+
+    #pdf, #pdf_descripcion{
+        width: 100%;
+    
+    }
+
+    /*-----------------------------------------------------------ZONAS-MAPA-TABLET----------------------------------*/
+
+    #zonas_mapas{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #zonas, #gps{
+        width: 100%;
+    }
+
+    .img_mapa{
+        width: 100%;
+    }
+
+    /*--------------------------------------------FORMULARIO-TABLET-----------------------------------------------*/
+
+    .formulario{
+        width: 98%;
+        margin-top: 5px;
+
+    }
+
+    /*-----------------------------------------------BANNER-TABLET----------------------------------------------*/
+
+    .ciudad{
+        width: 98%;
+    }
+
+    /*--------------------------------------------------VIDEO-TABLET--------------------------------------------*/
+
+    #video, #carrusel_contenedor, #imagenCarrusel{
+        width: 97%;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+
+
+    #ciudad_video{
+        margin-top: 20px;
+        width: 95%;
+        height: 300px;
+            
+    }
+    
+    #controles_videos{
+        display: flex;
+        justify-content: row;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+    
+    #controles_videos li {
+        text-decoration: none;
+        color:#fff;
+        padding: 0px 20px 0px 20px;
+        list-style: none;
+        
+    }
+    
+    #controles_videos li a{
+        text-decoration: none;
+        color:#fff;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-secundary)),  to(#2c2c2c));
+    }
+    
+    
+
+    /*--------------------------------------------------------AUDIO-TABLET----------------------------------------------*/
+
+    #audio{
+        width: 98%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /*-------------------------------------------------------BANNER-FOOTER--------------------------------------------*/
+
+    .banner_footer{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+
+    .camion_banner{
+        display: none;
+    }
+
+    #marca_footer{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #legal{
+        width: 100%;
+        margin-top: 30px;
+    
+        
+        
+        
+    }
+
+    .redes_footer_contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #redes_footer{
+        width: 25px;
+        margin-left: 20px;
+        margin-right: 10px;
+    
+    
+    }
+
+
+
+
+}
+
+
+/*--------------------------------------------------Responvive-Smartphone--------------------------------------------*/
+
+
+
+
+
+@media (max-width: 599px){
+
+    header{
+        width: 90vw;
+        margin-left:2%;
+        
+    }
+
+    #redes{
+        width: 100%;
+        height: 30px;
+        
+    
+    }
+
+    #iconos_redes{
+        float: left;
+    }
+
+
+
+    #modo{
+
+        width: 200px;
+        float: right;
+    
+    
+
+    } 
+
+    .iconos_redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90vw;
+    
+        
+        
+    }
+
+    .redes_navbar{
+        width: 15px;
+        height: auto;
+        padding-left: 2%;
+    
+    }
+
+
+    .logo_contenedor{
+        display: none;
+    }
+
+    #botonera_principal{
+        display: none;
+    }
+
+    .navbar_input{
+        display: none;
+    }
+
+    .navbar_content_mobile{
+        display: none;
+        
+    }
+
+    .navbar_open{
+        display: flex;
+        margin-top: -60px;
+    }
+
+    .img_menu{
+        margin-top: 15px;
+        margin-left:30px;
+    }
+
+    .lista_mobile{
+        list-style: none;
+        margin-top: 35px;
+    }
+
+    .navbar_input:checked ~ .navbar_content_mobile{
+        display: block;
+        z-index: 100;
+    }
+
+
+    /*--------------------------------------------------Contenido_uno_responsive-smartphone----------------------------------------------------*/
+
+    #contenido_uno, #contenido_uno_productos , #contenido_uno_contacto{
+        width: 90vw;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        box-sizing: border-box;
+    
+
+
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        
+        
+    }
+
+    .whatsapp, #pdf_catalogo{
+        width: 30px;
+        text-align: center;
+        margin-bottom: 40%;
+        margin-left: 30%;
+    
+    }
+
+    #pdf_catalogo{
+        width: 40px;
+    }
+
+    .cel{
+        text-align: left;
+        padding-left: 25%;
+    }
+
+    /*----------------------------------------------Espaciador-Smartphone-------------------------------------------*/
+
+    #separador_contenedor, #separador_contenedor_2{
+    display: none;
+
+    
+} 
+
+    #alimentos{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.2%;
+    
+        
+        
+    }
+
+    #bebida, #conserva, #botella, #lata, #bebida2, #botella2, #productos{
+        width: 95%;
+        margin-left: 1.2%;
+        
+    }
+
+    .ofertas_parrafo-detalle{
+        font-size: 17px;
+    }
+
+    .descripcion_alimentos{
+        font-size: 20px;
+    }
+
+    
+
+    #botella, #lata {
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        
+
+    }
+
+    #descargable{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    
+        
+        
+    }
+
+
+    .botones_contenedor{
+        margin-left: 230px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        
+    
+    
+    }
+
+    #caja_lienzos{
+        display:none;
+    }
+
+    #contenedor_titulo_drag{
+        display: none;
+    }
+    #contenedor_drag{
+        display:none;
+    }
+ 
+
+
+    #pdf, #pdf_descripcion{
+        width: 90vw;
+        padding: 4%;
+        
+        
+    }
+
+    .descripcion{
+        margin-top: 0px;
+    }
+
+    .sobre_catalogo{
+        font-size: 15px;
+    }
+
+    #zonas_mapas{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #zonas, #gps{
+        width: 90vw;
+        margin-left: 2%;
+    }
+
+    .img_mapa{
+        width: 100vw;
+    }
+
+    .formulario{
+        width: 90vw;
+        margin-left: 2%;
+        margin-top: 5px;
+        
+    }
+
+    #title_multimedia{
+
+        color:#fff;
+        text-align: center;
+        margin:auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+        margin-top: 20px;
+        
+    }
+        
+    button.btn_multimedia{
+            height: 45px;
+            line-height: 45px;
+            padding: 0px 30px 0px 30px;
+            border-radius: 10px;
+            color: var(--color-primary);
+            border: 4px solid var(--color-primary);
+            font-weight: bold;
+            background-color: #fff;
+        }
+        
+        button.btn_multimedia:hover{
+            transform: scale(1.2);
+            transition: all ease .3s;
+            box-shadow: 10px 10px 20px #2c2c2c;
+        }
+
+    
+
+    .ciudad{
+        width: 90vw;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #video, #carrusel_contenedor{
+        width: 90vw;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+
+    #imagenCarrusel{
+        width: 90%;
+
+    }
+
+    #ciudad_video{
+        margin-top: 20px;
+        width: 95%;
+        height: 300px;
+            
+    }
+
+
+    #audio{
+        width: 90vw;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .titulo_video{
+        font-size: 25px;
+    }
+
+    .banner_footer{
+        display: none;
+    }
+
+    #marca_footer{
+        display: none;
+    }
+
+    footer{
+        width: 90vw;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #legal{
+        width: 90vw;
+        margin-top: 30px;
+    
+        
+        
+        
+    }
+
+    .redes_footer_contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #redes_footer{
+        width: 25px;
+        margin-left: 20px;
+        margin-right: 10px;
+    
+    
+    }
+
+
+
+}

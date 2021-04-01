@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles/index.css" type="text/css" rel="stylesheet">
+    <link href="imagenes/truck.svg" rel="icon" type="img/svg">
+    <link href="styles/iconos.css" type="text/css" rel="stylesheet">
+
+    
+    
+    <title>Contacto</title>
+</head>
+
+<body id="bodyColor">
+
+    <main>
+
+
+        <header>
+
+            <!-----------------------------------------------------ICONOS REDES-------------------------------------->
+
+            <div id="redes">
+
+                <div id="iconos_redes">
+
+                    <a href="tel:+1138831502"><img id="redes_navbar" src="imagenes/101wpW.svg"></a>
+                    <a href="https://www.instagram.com/matiasmeg172/?hl=es-la" target="new"><img id="redes_navbar"
+                            src="imagenes/102igW.svg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=1534893491" target="new"><img id="redes_navbar"
+                            src="imagenes/103fbW.svg"></a>
+
+                </div>
+
+
+
+                <div id="modo">
+
+                    <img id="modoColor" onclick="ajustarColorDia()" src="imagenes/cambiarColor.svg">
+                    <img id="modoDark" onclick="ajustarColor()" src="imagenes/cambiarNegro.svg">
+
+                </div>
+
+            </div>
+
+
+
+            <!------------------------------------------------------LOGO-MENU------------------------------------------>
+
+            <div class="logo_menu_contenedor">
+
+                <div class="logo_contenedor">
+                    <a href="index.html"> <img id="marca" src="imagenes/logo_violeta.png"></a> 
+                </div>
+
+                <nav id="botonera_principal">
+
+                    <ul class="navbar">
+
+                        <li class="items"><a href="index.html">Inicio</a></li>
+                        <li class="items"><a href="productos.html">Catálogo</a></li>
+                        <li class="items"><a href="contacto.html">Zonas</a></li>                        
+                        <li class="items"><a href="productos.html">Productos</a></li>
+                        <li class="items"><a href="contacto.html">Contacto</a></li>
+
+
+                    </ul>
+
+                </nav>
+
+
+
+
+
+            </div>
+
+            <!------------------------------------------------------menu-mobile..............................-->
+
+
+            <seccion class="menu_mobile_contenedor">
+
+                <nav class="menu_mobile">
+
+
+
+                    <label for="navbar">
+                        <input id="navbar" type="checkbox" class="navbar_input">
+
+                        <div class="navbar_open">
+                            <img class="img_menu" src="imagenes/list (1).svg">
+                        </div>
+
+                        <div class="navbar_content_mobile">
+
+                            <ul class="lista_mobile">
+
+                                <li class="items"><a href="index.html">Inicio</a></li>
+                                <li class="items"><a href="index.html">Catálogo</a></li>
+                                <li class="items"><a href="contacto.html">Zonas</a></li>
+                                <li class="items"><a href="productos.html">Productos</a></li>
+                                <li class="items"><a href="contacto.html">Contacto</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                    </label>
+
+
+
+                </nav>
+
+
+            </seccion>
+
+
+        </header>
+
+
+
+
+
+<!-------------------------------------------------------------------SECCION-UNO------------------------------------>
+
+        <section id="contenido_uno_contacto" >
+
+            <h1 id='Distribuidora Emi' >Contacto</h1>
+            <p class="cel"><a href="tel:+1138831502"><img class="whatsapp" src="imagenes/101wpW.svg"></a></p>
+
+
+        </section>
+
+<!----------------------------------------------------------Espaciador--------------------------------->
+
+<div id="separador_contenedor">
+    <svg width="960" heigth="30">
+
+        <circle id="izq"    cx="430" cy="18" r="13" stroke="#fff"  stroke-width="3" fill="#bc6fe8">
+            <animateTransform attributeType="XML" attributeName="transform" type="translate"
+            from="0" to="-150" dur="3s" begin="0s"fill="restore" repeatCount="indefinite"/>
+            
+            <!--<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s" dur="5s"
+            fill="restore" repeatCount="indefinite"/>-etiqueta para cambiar opacidad------->
+        </circle>
+        
+        <circle id="centro" cx="480" cy="18" r="13" stroke="#fff"  stroke-width="3" fill= "#bc6fe8"/>
+        
+        <circle id="der"    cx="530" cy="18" r="13" stroke="#fff"  stroke-width="3" fill="#bc6fe8">
+            <animateTransform attributeType="XML" attributeName="transform" type="translate" from="0" to="150" 
+            dur="3s" begin="0s" fill="restore" repeatCount="indefinite"/>
+
+            <!---<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" begin="0s" dur="5s"
+            fill="restore" repeatCount="indefinite"/>---etiqueta para cambiar opacidad---->
+
+        </circle>
+
+
+    </svg>
+
+</div>
+
+
+
+            
+
+<!---------------------------------------------------------------SECCION-FORMULARIO----------------------------------->
+        </section>
+
+        <form class="formulario">
+
+            <h2 id="titulo_contacto">¡Escribinos!</h2>
+
+            <input class="campos" type="text" id="nombre"  placeholder="Nombre">
+
+            <input class="campos" type="email" id="email" placeholder="Email">
+
+            <textarea class="campos" id="mensaje"  rows="3" placeholder="Mensaje"></textarea>
+
+            <h4 class="region_reparto">¿Dónde queda tu negocio?</h4>
+
+            <select class="region_select" id="region" name="region">
+                <option value="santo_tome">Santo Tomé</option>
+                <option value="sauce_viejo">Sauce Viejo</option>
+                <option value="santa_fe">Santa Fe</option>
+            </select>
+
+            <button class="boton" type="submit" >Enviar</button>
+
+        </form>
+
+    </section>
+
+    <!---------------------------------------------------------zonas distribucion------------------->
+
+    <section id="zonas_mapas">
+
+        <article id="zonas">
+
+            <h2 class="descripcion">Zonas de distribución</h2>
+            <p class="sobre_catalogo">Nuestras instalaciones están ubicadas en la localidad de Santo Tomé. Desde allí
+                llegamos a cualquier punto de la ciudad y a las localidades vecinas de Santa Fe y Sauce Viejo. 
+            </p>
+            <p class="sobre_catalogo">Ante cualquier consulta, escribinos y te responderemos a la brevedad.</p>
+            <p class="sobre_catalogo"><strong>Dirección: Santiago del Estero N° 2750, Santo Tomé, Santa Fe.</strong></p>
+
+        </article>
+
+        <div id="gps">
+        
+            <iframe class="google_maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.5093523207356!2d-60.77381968529751!3d-31.6746407159595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a62b065e1f87%3A0xb218e2d2689ebea4!2sSantiago%20del%20Estero%202750%2C%20S3016BUB%20Santo%20Tom%C3%A9%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1606603376083!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+        </div>
+
+    </section>
+
+      
+        <!------------------------------------------------------------------------------FOOTER---------------------------------------->
+        <footer>
+
+            <div id="marca_redes">
+
+                <a href="index.html"><img id="marca_footer" src="imagenes/logo_violeta.png"></a>
+
+                <div class="redes_footer_contenedor">
+
+                    <a href="tel:+1138831502"><img id="redes_footer" src="imagenes/101wpW.svg"></a>
+                    <a href="https://www.instagram.com/matiasmeg172/?hl=es-la" target="new"><img id="redes_footer"
+                            src="imagenes/102igW.svg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=1534893491" target="new"><img id="redes_footer" src="imagenes/103fbW.svg"></a>
+
+                </div>
+            </div>
+
+            <div id="legal">
+                <p class="footer_legal">@2020 - Todos los derechos reservados</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+    
+    <script type="text/javascript" src="js/modo.js"></script>    
+    <script type="text/javascript" src="js/validacion.js"></script>
+    
+
+
+
+</body>
+
+</html>
